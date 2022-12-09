@@ -1,31 +1,44 @@
 .main-header {
-    border-bottom: 1px solid #000;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-  .logo {
-    font-size: 1.5rem;
-  }
-  
-  .nav-link {
-    background-color: rgb(202, 202, 202);
-    text-transform: uppercase;
-    padding: 0.5em 1em;
-    display: inline-block;
-  }
-  
-  .nav-link.currentPage {
-    font-weight: bold;
-  }
+.logo {
+  font-size: 1.5rem;
+}
 
-.inputErrorMsg {
-    color: tomato;
+.nav-link {
+  background-color: rgb(202, 202, 202);
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+
+.nav-link.currentPage {
+  font-weight: bold;
+}
+
+.inputErroMsg {
+  color: tomato;
 }
 
 .inputErrorField {
-    background-color: rgb(224, 134, 118);
+  background-color: rgb(255, 207, 198);
+  border-color: tomato;
+  color: black;
 }
-  
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

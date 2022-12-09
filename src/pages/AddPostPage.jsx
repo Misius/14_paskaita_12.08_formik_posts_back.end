@@ -1,11 +1,14 @@
-import AddPostForm from "../components/AddPostForm";
+import AddPostForm from '../components/AddPostForm';
 
-export default function AddPostPage(props) {
-    return (
-        <div>
-            <h1>AddPost page</h1>
-            <p>This should be before</p>
-            <AddPostForm />
-        </div>
-    )
+function AddPostPage(props) {
+  // kai sekmingai nusiusta mes norim naviguoti i PostsPage su react-router is AddPostsPage
+
+  return (
+    <div>
+      <h1>AddPostPage</h1>
+      <p>this should be a form</p>
+      <AddPostForm />
+    </div>
+  );
 }
+export default AddPostPage;
